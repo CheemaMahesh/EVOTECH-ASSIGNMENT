@@ -5,7 +5,7 @@ module.exports.surveyController=async (req,res)=>{
         const {name, gender, nationality, email, phoneNumber, address, message}=req.body;
         const existUser=await Survey.findOne({email});
         if(existUser){
-            return res.status(409).json({message:"response already exists TRY with new email",status:"already exists"});
+            return res.status(202).json({message:"response already exists TRY with new email",status:"already exists"});
         }else{
              await Survey.create({
                 name, gender, nationality, email, phoneNumber, address, message

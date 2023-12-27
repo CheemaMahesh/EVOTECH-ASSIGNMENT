@@ -27,7 +27,7 @@ app.use('/',require('./routes'));
 
 const mongoose=require('mongoose');
 
-const CONNECT_URL='mongodb://127.0.0.1/Surveys';
+const CONNECT_URL='mongodb+srv://MAHESH:MAHESHCHEEMA@evotech.dnf4ajd.mongodb.net/?retryWrites=true&w=majority';
 
 
 mongoose.set('strictQuery',false);
